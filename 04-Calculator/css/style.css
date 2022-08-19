@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+body{
+    background:linear-gradient(to left ,blue,black  , black  ,blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.box{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 20em;
+    height: 22em;
+    border: 2px solid rgb(6, 72, 253);
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.visor{
+    border-radius: 5px;
+    width: 275px;
+    height: 40px;
+    border: 3px solid  rgb(6, 72, 253);
+    background-color: azure;
+    text-align: end;
+    font-size: 32px;
+    vertical-align: top;
+}
+.expressao{
+    color:rgb(50, 224, 255);
+   
+    height: 2em;
+    
+    
+}
+.box .botoes{
+    
+    display: flex;
+    flex-direction: column;
+    width: 19em;
+    height: 19em;
+    border-bottom: 2em;
+}
+
+.btn{
+    width: 73px;
+    height: 40px;
+    border-radius: 10%;
+    border:2px solid rgb(6, 72, 253);
+    text-align: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: azure; 
+} 
+ 
+.btn-small{
+    width: 40px;
+    height: 40px;
+    margin-left: 0 2px;
+}
+.btn-large{
+    width: 82px;
+    height: 40px;
+    margin-left: 0 2px;
+}
+
+.btn-xlarge{
+    width: 130px;
+    height: 40px;
+    margin-left: 0 2px;
+    border-radius: 7px;
+    text-align: center;
+  
+}
+.btn-small:hover{
+    background-color: rgb(168, 236, 236); 
+}
+
+.btn-red{
+    background: rgb(241, 41, 41);
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: 900;
+}
+.btn-green{
+    display: flex;
+    background: rgb(58, 241, 41);
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: 900;
+    font-size: 40px;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.btn-yellow{
+    display: flex;
+    background: rgb(241, 238, 41);
+    color: rgb(2, 2, 2);
+    font-size: larger;
+    font-weight: bolder;
+    font-size: 30px;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 3px;
+}
+
+.btn-line{
+    margin-top: 0px;
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 16em;
+    height: 40px;
+    margin-top: auto;
+    line-height: 50px;
+    align-items: center;
+    vertical-align: top;
+    align-self: center;
+}
+.credits{
+    margin-top: 2em;
+    align-self: center;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 6px 0px rgba(255, 255, 255, 0.5);
+  }
