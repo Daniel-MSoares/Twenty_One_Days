@@ -57,6 +57,31 @@ body{
     border: none;
     border-radius: .3em;
  }
+ .btnCounter button:hover#up{
+    padding: .7em  2.7em ;
+    background-color: rgb(63, 61, 61);
+    margin-top: .3em;
+    color: rgb(0, 252, 13);
+    border:1px solid rgb(0, 252, 13);
+    font-weight: bolder;
+    font-size: 22px;
+    border-radius: .3em;
+ }
+ .btnCounter button#down{
+    color: rgb(225, 13, 4); 
+ }
+ .btnCounter button:hover#down{
+    padding: .7em  2.7em ;
+    background-color: rgb(63, 61, 61);
+    margin-top: .3em;
+    color: rgb(225, 13, 4);
+    border:1px solid rgb(225, 13, 4);
+    font-weight: bolder;
+    font-size: 22px;
+    border-radius: .3em;
+ }
+
+
  .toolsBar {
     padding: .7em  2.7em ;
     
@@ -79,6 +104,42 @@ body{
     border-radius: .3em;
     width: 10em; 
  }
+
+ .btnTimer button:hover{
+    padding: .5em  2.7em ;
+    background-color: rgb(68, 68, 68);
+    margin-top: .3em;
+    color: rgb(0, 252, 13);
+    border:1px solid rgb(0, 252, 13);
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: .3em;
+    width: 10em; 
+ }
+ .btnTimer button:hover#stop{
+    padding: .5em  2.7em ;
+    background-color: rgb(68, 68, 68);
+    margin-top: .3em;
+    color: rgb(227, 252, 4);
+    border:1px solid rgb(227, 252, 4);
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: .3em;
+    width: 10em; 
+ }
+ .btnTimer button:hover#reset{
+    padding: .5em  2.7em ;
+    background-color: rgb(68, 68, 68);
+    margin-top: .3em;
+    color: rgb(225, 13, 4);
+    border:1px solid rgb(225, 13, 4);
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: .3em;
+    width: 10em; 
+ }
+ 
+ 
 
 .timerDiv{
     width: 50em;
@@ -144,6 +205,16 @@ body{
     border: none;
     border-radius: .3em;
  }
+ .btnScoreboard button:hover{
+    padding: .3em  .5em;
+    background-color: rgb(68, 68, 68);
+    margin:.3em;
+    color: rgb(0, 252, 13);
+    border:1px solid rgb(0, 252, 13);
+    font-weight: bolder;
+    font-size: 40px;
+    border-radius: .3em;
+ }
  .red {
     color: rgb(252, 0, 13);
  }
@@ -172,3 +243,12 @@ body{
    border-radius: 50%;
    font-size: larger;
 }
+.btnReset:hover{
+    background: rgb(39, 36, 36);
+    color: rgb(255, 0, 0);
+    border-color:red ;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    font-size: larger;
+ }
