@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "orbitron";
+    src: url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf) format('truetype');
+}
+
+*{
+  font-family: "orbitron";
+}
+
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(39, 36, 36);
+    color: rgb(0, 252, 13);
+}
+
+.display-area .counterDiv{
+    width: 50em;
+    height: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 7px solid ;
+    border-radius:20px ;
+}
+.container>.display-area>.invisible {
+    display: none;
+}
+
+
+.view{
+    width: 4em;
+    font-size: 9em;
+    align-items: center; 
+}
+
+
+
+
+.btns{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.btnCounter button{
+    padding: .7em  2.7em ;
+    background-color: rgb(3, 3, 3);
+    margin-top: .3em;
+    color: rgb(0, 252, 13);
+    font-weight: bolder;
+    font-size: 22px;
+    border: none;
+    border-radius: .3em;
+ }
+ .toolsBar {
+    padding: .7em  2.7em ;
+    
+ }
+ .toolsBar button{
+    padding: .7em  2.7em ;
+    background-color: rgb(3, 3, 3);
+    color: rgb(0, 252, 13);
+    font-size: 14px;
+ }
+/* estilo do timer */
+.btnTimer button{
+    padding: .5em  2.7em ;
+    background-color: rgb(3, 3, 3);
+    margin-top: .3em;
+    color: rgb(0, 252, 13);
+    font-weight: bolder;
+    font-size: 14px;
+    border: none;
+    border-radius: .3em;
+    width: 10em; 
+ }
+
+.timerDiv{
+    width: 50em;
+    height: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 7px solid ;
+    border-radius:20px ;
+}
+.viewTime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40em;
+    height: 9em;
+    align-items: center; 
+}
+.viewTime span{
+    font-size: 5em;
+}
+.time{
+    margin: .2em;
+    width: 4em;
+    font-size: 6em;
+}
+/* placar */
+.inputs{
+   display: inline-flex;
+   text-align: center;
+   align-items: center;
+}
+.inputs input{
+    text-align: center;
+    background-color: transparent;
+    font-size: 1.3em;
+    margin: 1em;
+    border-bottom: none;
+    border-bottom: 1px solid ;
+    letter-spacing: .2em;
+ }
+ .inputs input::placeholder {
+    text-align: center;
+    color: whitesmoke;
+ }
+ .green{
+    color:rgb(0, 252, 13);
+ }
+ 
+ .red{
+    text-align: center;
+    color:  rgb(252, 0, 13);
+ }
+
+
+ .btnScoreboard button{
+    padding: .3em  .5em;
+    background-color: rgb(3, 3, 3);
+    margin:.3em;
+    color: rgb(0, 252, 13);
+    font-weight: bolder;
+    font-size: 40px;
+    border: none;
+    border-radius: .3em;
+ }
+ .red {
+    color: rgb(252, 0, 13);
+ }
+
+ .scoreDiv{
+    width: 50em;
+    height: 16em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 7px solid ;
+    border-radius:20px ;
+}
+.row{
+    display: flex;
+    width: 50em;
+    height: 16em;
+    align-items: center;
+}
+.btnReset{
+   background: rgb(3, 3, 3);
+   color: whitesmoke;
+   width: 2em;
+   height: 2em;
+   border-radius: 50%;
+   font-size: larger;
+}
