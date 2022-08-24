@@ -3,7 +3,6 @@ const infos =document.getElementById('infos')
 const author =document.getElementById('author')
 const toggle =document.getElementById('toggle')
 const phraseEl=document.getElementById('phrase')
-
 const pharse =[
      {
         pharse:"Me disseram que o céu é o limite.Insatisfeito com o argumento , procurei um Astronauta.",
