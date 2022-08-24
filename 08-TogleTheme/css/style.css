@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "dancing-script";
+    src: url("../font/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "righteous";
+    src: url("../font/Righteous/Righteous-Regular.ttf") format("truetype");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.lightTheme{
+    background: rgb(255, 255, 255);
+    background: linear-gradient(128deg, rgba(232, 237, 255,.3) 70%, rgb(163, 58, 243) 100%);
+    color:  rgb(143, 0, 252);
+}
+.darckTheme{
+    background: rgb(3, 3, 3);
+    background: linear-gradient(128deg, rgb(3, 3, 3) 70%, rgb(163, 58, 243) 100%);
+    color:  rgb(163, 58, 243);
+}
+
+
+
+.box{
+    margin: 0 2em;
+    font-family: "righteous";
+}
+
+.boxText{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80em;
+    height: 80vh;
+    font-size: 1.2em;
+    text-align: end;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 3px solid ;
+}
+.title{
+   font-size: 4em;
+   text-align: end;
+}
+.boxText .emphasis{
+    background-color:  rgb(246, 248, 255);
+}
+.text{
+    justify-content: end;
+    width: 100%;
+    height: 9em;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+}
+.phrase{
+    font-size: 2em;
+    margin-bottom: .3em;
+}
+.author{
+    font-family: "dancing-script";
+    font-size: 1.5em;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom:2.4em;
+    letter-spacing: .1em;
+}
+.lightText{
+   color: rgb(246, 248, 255);
+}
+
+
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 4em;
+    font-size: 1.4em;
+    margin-top: 1em;
+    padding: .2em;
+    box-sizing: border-box;
+}
+.infos a{
+    text-decoration: none;
+    color:currentColor ;
+    transition: .2s;
+}
+.infos a:hover{
+    font-size: 1.7em;
+    text-decoration: none;
+    color:rgb(185, 7, 255);
+    transition: .2s;
+}
+.CardLinks{
+    border-right:1px solid;
+    padding: .2em;
+    box-sizing: border-box;
+}
+.cardText{
+    font-size: medium;
+    text-align: left;
+    padding: .2em;
+    box-sizing: border-box;
+    
+}
+
+.boxImg{
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.boxImg img{
+    width: 35em;
+}
+
+.toggleArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 4em;
+    font-size: 1.4em;
+    margin-top: 1em;
+    padding: .2em;
+    box-sizing: border-box;
+    
+}
+.toggleButon{
+    position: absolute;
+    appearance: none;
+    border:2px solid rgb(163, 58, 243);
+    width: 7em; 
+    height: 3.4em;
+    border-radius: 25px;
+    transition:  .2s;
+}
+.toggleButon::before{
+    content:'';
+    position: absolute;
+    appearance: none;
+    border:2px solid rgb(163, 58, 243);
+    width: 2.5em; 
+    height: 2.5em;
+    border-radius: 50%;
+    transition: .2s;
+    left: .1em;
+    top: .1em;
+}
+.toggleButon::after{
+    content: url(../img/sun.svg);
+    position: absolute;
+    color:rgb(163, 58, 243) ;
+    width: 2.5em; 
+    height:2.5em;
+    font-size: 1em;
+    border-radius: 15px;
+    transition: .2s;
+    left: .8em;
+    top: .8em;
+}
+
+.toggleButon:checked{
+    background: rgb(163, 58, 243);
+}
+.toggleButon:checked::before{
+    background: rgb(37, 37, 37);
+    left: 3.9em;
+    top: .1em;
+}
+.toggleButon:checked::after{
+    content: url(../img/moon.svg);
+    left: 4.6em;
+}
