@@ -16,7 +16,13 @@
     background-repeat: no-repeat;
 }
 .content{
+    cursor: default;
    position: absolute;
+   background-color: transparent;
+   padding: 1em;
+   border-radius: 1em;
+   backdrop-filter:blur(5px);
+   border: 6px solid rgba(32, 32, 32, 0.37);
 }
 .container h1{
   
