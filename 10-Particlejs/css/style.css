@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to top ,rgba(24, 8, 255, 0.349),rgba(0, 0, 0, 0.719)),url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content{
+   position: absolute;
+}
+.container h1{
+  
+  color: azure;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 5em;
+}
