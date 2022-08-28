@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background:linear-gradient(to right,rgba(41, 39, 39, 0.473),rgba(49, 50, 53, 0.815)),url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: column;
+}
+
+.top{
+    width: 40em;
+    height: 4em;
+    justify-content: center;
+    display: flex;
+}
+.top img{
+    align-self: center;
+    position: absolute;
+    width: 16em;
+    justify-content: start;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+.showImageArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40em;
+    height: 22em;
+    background: rgba(217, 218, 133, 0.719);
+}
+.showImageArea img{
+    width: 38em;
+    height: 20em;
+}
+
+.controller{
+    font-size: 5em;
+    color: aliceblue;
+    font-weight: 900;
+    cursor:default;
+}
+.controller:hover{
+    font-size: 6em;
+    color: rgb(69, 139, 201);
+    font-weight: 900;
+}
+
+
+.control{
+    display: flex;
+    width: 80em;
+    height: 8em;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.control img{
+    width: 9em;
+    height: 5em;
+}
+.control img:hover{
+    width: 11em;
+    height: 7em;
+    transition: all .5s;
+}
+.active{
+    border: 7px solid rgba(217, 218, 133, 0.719);
+    transition: all .4s;
+}

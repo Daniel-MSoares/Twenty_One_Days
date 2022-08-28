@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top"><img src="img/One-Piece-Logo.png" alt="one piece logo"></div>
+    <div class="slider">
+       <div class="controller" onclick="changeImageManual('prev')"><span>&lt&lt</span></div>
+       <div onmouseover="changeImageAuto()" onmouseout="stopChangeAuto()" class="showImageArea"><img id='showImage' src="img/imagem1.jpg" alt="imagem 1"></div>
+       <div class="controller" onclick="changeImageManual('next')"><span>&gt&gt</span></div>
+    </div>
+    <div class="control">
+       <img class='minImg active' id="img1" onclick="changeImageMiniature(1)" src="img/imagem1.jpg" alt="imagem 1">
+       <img class='minImg' id="img2" onclick="changeImageMiniature(2)" src="img/imagem2.jpg" alt="imagem 2">
+       <img class='minImg' id="img3" onclick="changeImageMiniature(3)" src="img/imagem3.jpg" alt="imagem 3">
+       <img class='minImg' id='img4' onclick="changeImageMiniature(4)" src="img/imagem4.jpg" alt="imagem 4">
+       <img class='minImg' id='img5' onclick="changeImageMiniature(5)" src="img/imagem5.jpg" alt="imagem 5">
+       <img class='minImg' id='img6' onclick="changeImageMiniature(6)" src="img/imagem6.jpg" alt="imagem 6">
+       <img class='minImg' id='img7' onclick="changeImageMiniature(7)" src="img/imagem7.jpg" alt="imagem 7">
+       <img class='minImg' id='img8' onclick="changeImageMiniature(8)" src="img/imagem8.jpg" alt="imagem 7">
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
