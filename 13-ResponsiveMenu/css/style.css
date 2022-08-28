@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background: url('../img/bg.jpg');
+    background-position: center;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 2em;
+    background: rgba(133, 131, 131, 0.342);
+    
+}
+.logo{
+    width: 15em;
+    height: 5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo h2{
+    text-align: center;
+    font-size: 2.8em;
+    color: rgb(247, 247, 247);
+}
+.logo span{
+    color: aliceblue;
+    background-color: rgb(211, 20, 20);
+    padding:.1em 0.1em .1em .7em ;
+}
+.logo p{
+    font-size: 1.5em;
+    font-weight: 900;
+    padding:.1em 0 .1em .7em ;
+    color: aliceblue;
+    font-style: italic;
+}
+
+.navlinks{
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.4em;
+}
+.navlinks a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    padding: .5em;
+}
+.navlinks a:hover{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: aliceblue;
+    border-bottom: .1em solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    padding: .5em;
+}
+.btn-menu{
+    display: none;
+    border-radius: 5px;
+    color: rgb(211, 20, 20);
+    font-size: 3em;
+    font-weight: 900;
+    padding: .1em;
+}
+.btn-menu:hover{
+    border-radius: 5px;
+    color: rgb(241, 237, 237);
+    font-size: 3em;
+    font-weight: 900;
+    padding: .1em;
+}
+.active{
+    display:flex;
+}
+@media (max-width: 967px) {
+    body{
+        overflow-x: hidden;
+    }
+    .btn-menu{
+        display: block;
+    }
+    .navlinks{
+       margin: 0;
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       width: 50vw;
+       height:76.1vh;
+       background: rgba(133, 131, 131, 0.137);
+       backdrop-filter: blur(10px);
+       top: 6.45em;
+       right: 0;
+       justify-content: space-around;
+       transform: translatex(100%);
+       opacity: 0;
+       transition: all .6s ease-in;
+    }
+    .activeMenu{
+      opacity: 1;
+      transform: translatex(0);  
+      transition: transform .6s ease-in;
+    }
+    .navlinks a{
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2em;
+      border-bottom: 1px solid rgb(168, 168, 168);
+    }
+
+.btn-menu{
+    cursor: pointer;
+}
+.btn-menu div{
+   width: 32px;
+   height: 4px;
+   background-color: rgb(240, 0, 0);
+   margin: 8px;
+   transition:transform 1.2s;
+}
+.btn-menu.active .line1{
+   transform: rotate(-45deg) translate(-10px,3px);
+ }
+.btn-menu.active .line2{
+    opacity: 0;
+}
+.btn-menu.active .line3{
+    transform: rotate(45deg) translate(-12px,-8px);
+}
+}
+
