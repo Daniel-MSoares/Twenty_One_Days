@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="modal" class="modal">
+            <img src="img/question.png" class="logo">
+           <button onclick="loadQuestion()">INICIAR</button>
+        </div>
+
+        <div id="main" style="display: none;">
+            <div class="quiz">
+                <div class="question">
+                    <p id="question"></p>
+                </div>
+                <div class="options">
+                    <div class="lineOption" onclick="answerQuestion(0)">
+                        <span class="indice">A</span>
+                        <p class="option"></p>
+                    </div>
+                    <div class="lineOption" onclick="answerQuestion(1)">
+                        <span class="indice">B</span>
+                        <p class="option"></p>
+                    </div>
+                    <div class="lineOption" onclick="answerQuestion(2)">
+                        <span class="indice">C</span>
+                        <p class="option"></p>
+                    </div>
+                    <div class="lineOption" onclick="answerQuestion(3)">
+                        <span class="indice">D</span>
+                        <p class="option"></p>
+                    </div>
+                    <div class="lineOption" onclick="answerQuestion(4)">
+                        <span class="indice">E</span>
+                        <p class="option"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="counter">
+                    <h1>questão <span id="curent">0</span> de <span id="length"></span></h1>
+                </div>
+                <div class="answers">
+                    <div id="hits">
+                        <img src="img/check-circle.svg">
+                        <h5 id='qtdHits'>0</h5>
+                    </div>
+                    <div id="misses">
+                        <img src="img/x-circle.svg">
+                        <h5 id='qtdMisses'>0</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bannerWin" style="display: none;">
+            <h2 id='congratulation'></h2>
+            <h3>voçe acertou <span id="percent"></span>% das questões</h3>
+            <button onclick="loadQuestion()">Jogar novamente</button> 
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
