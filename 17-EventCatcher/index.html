@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Catcher</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,100;1,300;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><h1>Event Catcher</h1></header>
+    <main>
+        <div id="event">
+            <span id="key" class="key"></span>
+            <div id='keyCode' class="keyCode"></div>
+        </div>
+        <div class="details">
+            <div class="eventType">
+                <h6>Event type:</h6>
+                <div id="etypetext"  class="etypetext"></div>
+            </div>
+
+            <div class="eventFlags">
+                <div class="flag">
+                    <h6>alt</h6>
+                    <div id="altInd" class="indicator"></div>
+                </div>
+                <div class="flag">
+                    <h6>shift</h6>
+                    <div id="shiftInd" class="indicator"></div>
+                </div>
+                <div class="flag">
+                    <h6>ctrl</h6>
+                    <div id="ctrltInd" class="indicator"></div>
+                </div>
+            </div>
+            <div class="eventCode">
+                <h6>Code:</h6>
+                <div id="code" class="code"><span>KeyV</span></div>
+            </div>
+            
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

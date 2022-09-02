@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background:  gray;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+header{
+    height: 10vh;
+    color: rgb(199, 12, 12);
+    background: rgb(22, 21, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    padding: 1em;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#event{
+     height: 20em;
+     min-width: 20em;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     background: rgb(59, 57, 57);
+     border-bottom: 7px double rgb(248, 0, 0);
+}
+.key{
+    font-size: 10em;
+    color: red;
+}
+.keyCode{
+    font-size: 3.5em;
+    color: rgb(255, 255, 255);
+}
+
+.details{
+     height: 20em;
+     width: 20em;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     text-align: start;
+     background: rgb(59, 57, 57);
+     border: 7px double rgb(248, 0, 0);
+     border-left: none;
+     border-top: none;
+}
+
+.eventType{
+   background: rgb(59, 57, 57);
+   height: 4em;
+   padding-left: 1.2em;
+}
+.eventType h6{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+ }
+.etypetext{
+    font-size: 1.3em;
+    color: red;
+}
+.eventFlags{
+    background: rgb(59, 57, 57);
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5em;
+    color:rgb(255, 255, 255) ;
+    padding:0 .5em;
+}
+.flag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.indicator{
+    width: 1.3em;
+    height: 1.3em;
+    border: 2px solid rgb(229, 226, 226);
+}
+.eventCode{
+    background: rgb(59, 57, 57);
+    height: 4em;
+    padding-left: 1.2em;
+}
+
+.eventCode h6{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+ }
+.code{
+    font-size: 1.3em;
+    color: red;
+}
+.green{
+    background-color: rgb(14, 223, 14);
+}
+.red{
+    background-color: rgb(255, 0, 0); 
+}
