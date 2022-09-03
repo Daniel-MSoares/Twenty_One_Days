@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generetor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="box">
+     <h2>Password Generator</h2>
+     <div id="viewer" class="viewer">       
+       <input type="text" id="password">
+       <button class="copy " onclick="copyPassword()">Copiar</button>
+     </div>
+     <div class="settings">
+      <div class="qtdChar">
+        <label for="qtdChar">Qtd. de caracteres</label><input type="range"  name="qtdChar" id="qtdChar" min="4" max="30" value="8" ><span id='lenght'>08</span>
+      </div>
+      <div class="lineInput">
+       <input type="checkbox" name="uppercase" id="uppercase">
+       <label for="uppercase">Caracteres maíusculos</label>
+      </div>
+      <div class="lineInput">
+        <input type="checkbox" name="lowercase" id="lowercase">
+        <label for="lowercase">Caracteres minúsculos</label>
+       </div>
+       <div class="lineInput">
+        <input type="checkbox" name="numbers" id="numbers">
+        <label for="numbers">números</label>
+       </div>
+       <div class="lineInput">
+        <input type="checkbox" name="especialCharacters" id="especialCharacters">
+        <label for="especialCharacters">Caracteres especiais</label>
+       </div>
+     </div>
+     <button class="generate" onclick="generatePassword()">Gerar Senha</button>
+  </div> 
+  <script src="js/app.js"></script> 
+</body>
+</html>
