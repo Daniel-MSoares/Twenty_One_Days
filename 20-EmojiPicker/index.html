@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmojiPicker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto+Mono:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id='alert' style="display:none;">Copiado!!</div>
+     <div id="emoji-selected" class="emoji-selected">
+         <div id="emoji"></div>
+         <input type="text" style=" position:absolute;transform: translatey(999px);z-index: -17;" id="emojiSelected">
+         <span id="emojiCode"></span>
+        <button id="copyBtn" style="display:none;" class="btn" onclick="copyEmoji('emojiSelected')">copiar</button>
+     </div>
+
+     <div class="text">
+        <input type="text" id="textEmoji"><button class="btn btn-txt" onclick="copyEmoji('textEmoji')">copiar</button>
+     </div>
+     <header>
+        <button onclick="getEmojisByCategory('smileys-emotion')">😄😍🙂</button>
+        <button onclick="getEmojisByCategory('people-body')">👋✌️👨🏻‍💻</button>
+        <button onclick="getEmojisByCategory('animals-nature')">🐾🌿🐰</button>
+        <button onclick="getEmojisByCategory('food-drink')">🍔🍷🎂</button>
+        <button onclick="getEmojisByCategory('travel-places')">🏖️🏔️🌎</button>
+        <button onclick="getEmojisByCategory('activities')">🎉⚽🎮</button>
+        <button onclick="getEmojisByCategory('objects')">🎩🎥✏️</button>
+        <button onclick="getEmojisByCategory('symbols')">⚜️⏩🔺</button>
+      </header>
+     <div id="emoji-field">
+     
+      <div id="emojischaracters">
+      
+    
+
+      </div>
+    </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
