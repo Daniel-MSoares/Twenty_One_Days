@@ -1,0 +1,167 @@
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'roboto', sans-serif;
+   overflow: hidden;
+}
+.body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(to top ,rgba(255, 239, 8, 0.349),rgba(103, 32, 121, 0.61)),url(../img/bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji-selected{
+    width: 12em;
+    height: 13.6em;
+    border-radius: 10px;
+    border: 3px solid rgba(128, 128, 128, 0.473);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(234, 0, 255, 0.082);
+    backdrop-filter: blur(6px);
+    padding: .2em;
+}
+.emoji-selected span{
+     color: aliceblue;
+     font-size: .2em;
+}
+#emoji{
+    font-size:6em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    height: 2.3em;
+    width: 60%;
+    border-radius: 10px;
+    background: rgb(2, 223, 49);
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: aliceblue;
+    border: 2px solid transparent ;
+}
+.emoji-info{
+    font-size: medium;
+}
+
+.btn:hover{
+    border-radius: 10px;
+    background: rgb(0, 78, 17);
+    border: 2px solid rgb(0, 43, 9) ;  
+}
+#emojiCode{
+   font-size: 1em;
+}
+.copied{
+    box-shadow: 0px 0px 30px 30px rgba(0, 253, 13, 0.8);
+}
+
+
+.text {
+    width: 70vw;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.text input{
+    width: 80%;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+.btn-txt{
+    width: 16%;
+    border-radius: 10px;
+    height: auto;
+    font-size: 30px;
+    background: rgb(74, 235, 0);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#emoji-field{
+  height: 40vh;
+  width: 70vw;
+  text-align: center;
+  background:transparent;
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 0, 0.575);
+  padding: 1em;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+header button{
+    margin: 0;
+    background-color: rgba(224, 221, 221, 0.418);
+    font-size: 1.4em;
+    border: 2px solid rgb(230, 228, 228);
+    color: rgb(0, 0, 0);
+    padding:.2em .1em ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#emoji-field .active{
+    background-color: rgba(34, 34, 34, 0.562);
+    color: aliceblue;
+}
+
+#emojischaracters{
+    display: flex;
+    font-size: 2.2em;
+    margin-top: 3px;
+    padding-top: .2em;
+    border-top: 2px solid whitesmoke;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.emojiSingle{
+ justify-content: center;
+   width: 1.3em;
+   height: 1.3em;
+   padding: 0.3em;
+   background-color: rgba(234, 0, 255, 0.295);
+   backdrop-filter: blur(1px);
+   border-radius: 10px;
+   margin: .1em;
+}
+
+#alert{
+    background: rgba(216, 13, 223, 0.5);
+    color: rgb(255, 251, 0);
+    font-size: 3em;
+    padding: .3em;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 251, 0) ;
+    position: absolute;
+    z-index: 1000;
+    right: 100px;
+    top: 100px;
+    animation:  float 4s infinite ;
+}
+@keyframes float {
+    0%{
+        top: 100px;  
+    }
+    50%{
+        top: 50px;
+    }
+}
