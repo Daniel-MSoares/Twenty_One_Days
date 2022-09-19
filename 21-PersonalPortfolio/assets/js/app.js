@@ -7,10 +7,11 @@ function hideNav(action){
 
     if(action==='add'){
         header.classList.add('hide')
+        
     }else{
         header.classList.remove('hide')
     }
-    
+    hideMenuscroll()
 }
 
 document.addEventListener('scroll',(e)=>{
@@ -31,4 +32,14 @@ function toggleProjects(){
         showAll.innerText='ver mais'
     }
     works.classList.toggle('expanded')
+}
+
+function toggleMenu(){
+    document.getElementById('menu').classList.toggle('showMenu')
+    document.getElementById('toggle').classList.toggle('ligthing')
+}
+function hideMenuscroll(){
+   if(document.getElementById('menu').classList.contains('showMenu')){
+    document.getElementById('menu').classList.remove('showMenu')
+   }
 }
