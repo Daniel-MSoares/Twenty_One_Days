@@ -77,7 +77,7 @@ function endGame(){
     if(percent>50){
         document.getElementById('congratulation').innerText='GENIAL !!!!'
     }else{
-        document.getElementById('congratulation').innerText='VOCÊ CONCEGUE FAZER MELHOR !!!'
+        document.getElementById('congratulation').innerText='VOCÊ CONSEGUE FAZER MELHOR !!!'
     }
     bannerWin.style.display='flex';
     done=[]

@@ -25,6 +25,7 @@ header{
     box-sizing: border-box;
     justify-content: space-between;
     position:fixed;
+    z-index: 100;
     width: 100vw;
     backdrop-filter: blur(13px);
     border-bottom: 1px solid #c7c2ba46;
@@ -167,6 +168,7 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 #works.expanded{
@@ -225,18 +227,23 @@ header{
   display: block;
   text-align: center;
 }
+.card-Links{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    bottom:4px;
+}
 
 .card-project a{
-    position: absolute;
-    bottom:4px ;
     display:inline-block;
-    line-height: 2em;
+    line-height: 1.8em;
     cursor: pointer;
     text-decoration: none;
     color: #c7c2ba;
     background: #181517;
     font-size: 1.4em;
-    padding: .2em 1em;
+    padding: .2em .8em;
     margin-top: .5em;
     border-radius: 10px;
 }
@@ -423,6 +430,7 @@ footer span{
         border-bottom: 2px solid  rgba(19, 0, 0, 0.589);
         padding-top: 40vh ;
         box-shadow: 0px 20px 30px 0px rgba(19, 0, 0, 0.589);
+        font-size: .7em;
      }
 
      .text-home{
@@ -446,10 +454,10 @@ footer span{
         text-align: center;
         margin-top: 2em;
         font-size: .5em;
-        color:#e51918;
+        color:#f3f1f1;
         background: transparent;
         padding: .3em;
-        border: 2px solid #b70508;
+        border: 2px solid #f3f1f1;
         border-radius: 10px;
         width: 7em;
         cursor: pointer;
@@ -461,7 +469,7 @@ footer span{
         color: #c7c2ba;
         width: 100vw;
         height: auto;
-        background:linear-gradient(80deg,#ca0205d0 ,rgba(31, 0, 0, 0.897) 30%),url('../img/textura.svg') no-repeat left;
+        background:linear-gradient(80deg,#681c1ed0 ,rgba(31, 0, 0, 0.897) 30%),url('../img/textura.svg') no-repeat left;
         background-size: contain;
         box-sizing: border-box;
         display: block;
@@ -574,7 +582,6 @@ footer span{
     }
     
     .card-project a{
-        position: absolute;
         display:inline-block;
         line-height: 1.4em;
         cursor: pointer;
@@ -582,10 +589,9 @@ footer span{
         color: #c7c2ba;
         background: #181517;
         font-size: 1em;
-        padding: .2em 1em;
+        padding: .2em .5em;
         margin-top: .5em;
         border-radius: 6px;
-        bottom:4px ;
     }
     .card-project a:hover{
         color: #c7c2ba;
@@ -630,7 +636,7 @@ footer span{
     #email{
         display: block;
         text-align: center;
-        font-size: 1.4em;
+        font-size: 1em;
         font-style: italic;
     }
     #whatsapp{
@@ -649,7 +655,7 @@ footer span{
     .btn-contacts a{
       text-decoration: none;
       color: #b70508;
-      font-size: 3em;
+      font-size: 2em;
       padding: .5em;
       transition: all 1s;
     }
@@ -673,7 +679,7 @@ footer span{
         flex-direction: column;
     }
     footer p{
-       font-size: 1.1em; 
+       font-size: .7em; 
     }
     
     footer span{
@@ -714,11 +720,11 @@ footer span{
         display: inline-block;
         text-align: center;
         margin-top: 2em;
-        font-size: .5em;
-        color:#e51918;
+        font-size: .6em;
+        color:#f1f1f0;
         background: transparent;
-        padding: .3em;
-        border: 2px solid #b70508;
+        padding: .4em;
+        border: 2px solid #f3f1f1;;
         border-radius: 10px;
         width: 7em;
         cursor: pointer;

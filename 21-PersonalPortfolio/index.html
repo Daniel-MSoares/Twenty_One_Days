@@ -1,247 +1,521 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,max-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 ,max-scale=1.0"
+    />
     <title>Daniel Muniz</title>
 
-   <!-- Import fonts from google fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,
+    <!-- Import fonts from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,
     100;0,200;0,300;0,400;0,500;0,900;1,600&display=swap"
-    rel="stylesheet">
+      rel="stylesheet"
+    />
     <!-- import css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- import bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
     <header id="header" class="">
-        <div>
-            <span class="logo">&ltDanielDev/&gt</span>
-        </div>
-            
-         <button id="toggle" onclick="toggleMenu()"><i class="bi bi-three-dots-vertical"></i></button>
-         <nav class="menu " id="menu">
-               
-            <a href='#home'>Home</a>
-            <a href='#about-me'>Sobre Mim</a>
-            <a href='#works'>Portfólio</a>
-            <a href='#contacts'>Contatos</a>
-         </nav>
-       
+      <div>
+        <span class="logo">&ltDanielDev/&gt</span>
+      </div>
+
+      <button id="toggle" onclick="toggleMenu()">
+        <i class="bi bi-three-dots-vertical"></i>
+      </button>
+      <nav class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#about-me">Sobre Mim</a>
+        <a href="#works">Portfólio</a>
+        <a href="#contacts">Contatos</a>
+      </nav>
     </header>
     <section id="home">
-       <div class="text-home">
-         <h1>
-            Oi, eu sou 
-            <span class="name"> Daniel Muniz</span>
-            <span class="occupation">Web Developer</span>
-         </h1>
+      <div class="text-home">
+        <h1>
+          Oi, eu sou
+          <span class="name"> Daniel Muniz</span>
+          <span class="occupation">Web Developer</span>
+        </h1>
 
-         <a class="btn-home"  href="https://github.com/Daniel-MSoares" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-         <a class="btn-home" href="https://www.linkedin.com/in/daniel-muniz-33a889197/"><i class="bi bi-linkedin"></i> LinkedIn</a>
-       </div>
+        <a
+          class="btn-home"
+          href="https://github.com/Daniel-MSoares"
+          target="_blank"
+          ><i class="bi bi-github"></i> GitHub</a
+        >
+        <a
+          class="btn-home"
+          href="https://www.linkedin.com/in/daniel-muniz-33a889197/"
+          target="_blank"
+          ><i class="bi bi-linkedin"></i> LinkedIn</a
+        >
+        <a
+          class="btn-home"
+          href=" https://dev-danielmsoares.pantheonsite.io/"
+          target="_blank"
+          ><i class="bi bi-journal-richtext"></i> Blog</a
+        >
+      </div>
     </section>
     <section id="about-me">
-        <div class="title-about-me">
-            <span>Quem Sou Eu?</span>
+      <div class="title-about-me">
+        <span>Quem Sou Eu?</span>
+      </div>
+      <div class="text-about-me">
+        <p>
+          Olá,sou Daniel Muniz, natural de Minas Gerais, apaixonado por
+          tecnologia, me formei em A.D. de Sistemas em 2020, e continuo
+          estudando e buscando aprender mais desse universo maravilhoso da
+          programação.
+        </p>
+        <p>
+          com esses anos de estudo consegui adquirir conhecimento em várias
+          tecnologias, como <span>HTML</span>, <span>CSS</span>,
+          <span>JavaScript</span>, <span>PHP</span> e <span>MySQL</span>.
+          Atualmente estou estudando mais sobre tecnologias web mais
+          avançadas,como <span>REACT JS</span> e <span>NODE.JS</span>.
+        </p>
+      </div>
+    </section>
+    <section id="works" class="">
+      <h1>Projetos recentes</h1>
+      <div class="projects">
+        <div class="card-project">
+          <img class="card-img" src="assets/img/01.png" alt="" />
+          <h2>Hello Word</h2>
+          <p>Hello Word customizado com fontes e imagens</p>
+          <span class="etc">...</span>
+          <div class="card-Links">
+           <a
+            href="https://daniel-msoares.github.io/Twenty_One_Days/02-HelloWorld/"
+            target="_blank"
+            ><i class="bi bi-globe2"></i> Visualizar</a
+           >
+           <a
+            href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/02-HelloWorld"
+            target="_blank"
+            ><i class="bi bi-github"></i></a
+           >
+          </div>
         </div>
-        <div class="text-about-me">
-            <p>Olá,sou Daniel Muniz, natural de Minas Gerais,
-                apaixonado por tecnologia, me formei em A.D. de Sistemas em 2020,
-                e continuo estudando e buscando aprender mais desse universo maravilhoso da programação.  
-            </p>
-            <p>com esses anos de estudo consegui adquirir conhecimento em várias tecnologias, como <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>,
-                <span>PHP</span> e <span>MySQL</span>. Atualmente estou estudando mais sobre tecnologias web mais avançadas,como <span>REACT JS</span> e <span>NODE.JS</span>.
-            </p>
-        </div>
-     </section>
-     <section id="works" class=''>
-        <h1>Projetos recentes</h1>
-        <div class="projects">
-             <div class="card-project">
-                <img class="card-img" src="assets/img/01.png" alt="">
-                <h2>Hello Word</h2>
-                <p>Hello Word customizado com fontes e imagens</p>
-                <span class="etc">...</span>
-                <a href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/02-HelloWorld" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-            
 
-             <div class="card-project">
-               <img class="card-img" src="assets/img/15.png" alt="">
-                <h2>Bíblia multi-idiomas</h2>
-                <p>aplicação consumindo uma api pública que fornece 6 versões da Bíblia completa em 3 idiomas diferentes</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/16-UsingPublicAPI" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/02.png" alt="">
-                <h2>Botão animado</h2>
-                <p>Botão animado com css</p>
-                <span class="etc">...</span>
-                <a href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/03-AnimatedButton" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/03.png" alt="">
-                <h2>Calculadora js</h2>
-                <p>Calculadora simples com JavaScript</p>
-                <span class="etc">...</span>
-                <a href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/04-Calculator" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/04.png" alt="">
-                <h2>Pagina 404</h2>
-                <p>Pagina de erro 404 customizada</p>
-                <span class="etc">...</span>
-                <a href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/05-page404" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/05.png" alt="">
-                <h2>Efeito Glassmorphism</h2>
-                <p>Card aplicando efeito Glasmorphism com css</p>
-                <span class="etc">...</span>
-                <a href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/06-Glassmorphism" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/06.png" alt="">
-                <h2>Contador</h2>
-                <p>Varios tipos de contadores desenvolvidos com js</p>
-                <span class="etc">...</span>
-                <a href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/07-%20Counter" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/07.png" alt="">
-                <h2>Botão toggle</h2>
-                <p>página com botão para alternar entre tema claro e escuro</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/08-TogleTheme" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/08.png" alt="">
-                <h2>Loading</h2>
-                <p>Animação de loading customizada</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/09-Loading" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/09.png" alt="">
-                <h2>Particles.js</h2>
-                <p>utilizando a biblioteca particles.js para criar um background interativo</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/10-Particlejs" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/10.png" alt="">
-                <h2>Formulario de login</h2>
-                <p>design de um formulário de login customizado</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/11-LoginForm" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/11.png" alt="">
-                <h2>Galeria de Imagens</h2>
-                <p>uma galeria de imagens com navegação entre as imagens</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/12-ImageGallery" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/12.png" alt="">
-                <h2>menu Responsivo</h2>
-                <p>barra de navegação que se adapta aotamanho da tela</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/13-ResponsiveMenu" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/13.png" alt="">
-                <h2>Quiz</h2>
-                <p>formulário de quiz,com perguntas aleatórias</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/14-Quiz" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/14.png" alt="">
-                <h2>Vitrine de e-Commerce</h2>
-                <p>layout simples de uma vitrine de um ecommerce ficticio</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/15-productsShowcase" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/16.png" alt="">
-                <h2>Capturador de eventos</h2>
-                <p>aplicação que captura eventos de teclado e osexibe na tela para o usuário</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/17-EventCatcher" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/17.png" alt="">
-                <h2>Gerador de senhas</h2>
-                <p>aplicação que gera senhas aléatórias,de acordo com aprefe^rncia do usuário</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/18-PasswordGeneretor" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/18.png" alt="">
-                <h2>Galeria de imagens aleatórias</h2>
-                <p>exibição deimagens aléatóorias,usando api do unsplash e layout grid</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/19-RandonImagesGallery" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
-
-
-             <div class="card-project">
-                <img class="card-img" src="assets/img/19.png" alt="">
-                <h2>Emoji Picker</h2>
-                <p>site onde o usáriopode selecionar um ou vários emojis e copiarpara aárea de transferência</p>
-                <span class="etc">...</span>
-                <a  href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/20-EmojiPicker" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
-             </div>
+        <div class="card-project">
+          <img class="card-img" src="assets/img/15.png" alt="" />
+          <h2>Bíblia multi-idiomas</h2>
+          <p>
+            aplicação consumindo uma api pública que fornece 6 versões da Bíblia
+            completa em 3 idiomas diferentes
+          </p>
+          <span class="etc">...</span>
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/16-UsingPublicAPI/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/16-UsingPublicAPI"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
 
         </div>
 
-        <div id='showAll' class="show-all-projects" onclick="toggleProjects()">ver mais</div>
-     </section>
-     <section id="contacts">
-        <h2>
-            Contatos:
-        </h2>
-        <span id="email"><i class="bi bi-envelope"></i> danielmsoares003@gmail.com</span>
-        <span id="whatsapp"><i class="bi bi-whatsapp"></i> (33) 9 8739-5971</span>
-        <div class="btn-contacts">
-            <a href="https://api.whatsapp.com/send?phone=5533987395971&text=ol%C3%A1" target="_blank"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://github.com/Daniel-MSoares" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/daniel-muniz-33a889197/"><i class="bi bi-linkedin" target="_blank"></i></a>
-            <a href="https://www.instagram.com/d.a.n.i.e.l_muniz/" target="_blank"><i class="bi bi-instagram" target="_blank"></i></a>
+        <div class="card-project">
+          <img class="card-img" src="assets/img/02.png" alt="" />
+          <h2>Botão animado</h2>
+          <p>Botão animado com css,utilizando efeitos e animações css</p>
+          <span class="etc">...</span>
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/03-AnimatedButton/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/03-AnimatedButton"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
         </div>
-     </section>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/03.png" alt="" />
+          <h2>Calculadora js</h2>
+          <p>Calculadora simples com JavaScript</p>
+          <span class="etc">...</span>
+         
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/04-Calculator/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/04-Calculator"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/04.png" alt="" />
+          <h2>Pagina 404</h2>
+          <p>Pagina de erro 404 customizada</p>
+          <span class="etc">...</span>
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/05-page404/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/05-page404"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/05.png" alt="" />
+          <h2>Efeito Glassmorphism</h2>
+          <p>Card aplicando efeito Glasmorphism com css</p>
+          <span class="etc">...</span>
+   
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/06-Glassmorphism/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/06-Glassmorphism"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/06.png" alt="" />
+          <h2>Contador</h2>
+          <p>Varios tipos de contadores desenvolvidos com js</p>
+          <span class="etc">...</span>
+          
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/07-%20Counter/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/07-%20Counter"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/07.png" alt="" />
+          <h2>Botão toggle</h2>
+          <p>página com botão para alternar entre tema claro e escuro</p>
+          <span class="etc">...</span>
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/08-TogleTheme/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/08-TogleTheme"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/08.png" alt="" />
+          <h2>Loading</h2>
+          <p>Animação de loading customizada</p>
+          <span class="etc">...</span>
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/09-Loading/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/09-Loading"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/09.png" alt="" />
+          <h2>Particles.js</h2>
+          <p>
+            utilizando a biblioteca particles.js para criar um background
+            interativo
+          </p>
+          <span class="etc">...</span>
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/10-Particlejs/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/10-Particlejs"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/10.png" alt="" />
+          <h2>Formulario de login</h2>
+          <p>design de um formulário de login customizado</p>
+          <span class="etc">...</span>
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/11-LoginForm/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/11-LoginForm"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/11.png" alt="" />
+          <h2>Galeria de Imagens</h2>
+          <p>uma galeria de imagens com navegação entre as imagens</p>
+          <span class="etc">...</span>
+
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/12-ImageGallery/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/12-ImageGallery"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/12.png" alt="" />
+          <h2>menu Responsivo</h2>
+          <p>barra de navegação que se adapta aotamanho da tela</p>
+          <span class="etc">...</span>
+          
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/13-ResponsiveMenu/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/13-ResponsiveMenu"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/13.png" alt="" />
+          <h2>Quiz</h2>
+          <p>formulário de quiz,com perguntas aleatórias</p>
+          <span class="etc">...</span>
+         
+
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/14-Quiz/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/14-Quiz"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/14.png" alt="" />
+          <h2>Vitrine de e-Commerce</h2>
+          <p>layout simples de uma vitrine de um ecommerce fictício</p>
+          <span class="etc">...</span>
+          
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/15-productsShowcase/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/15-productsShowcase"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/16.png" alt="" />
+          <h2>Capturador de eventos</h2>
+          <p>
+            aplicação que captura eventos de teclado e osexibe na tela para o
+            usuário
+          </p>
+          <span class="etc">...</span>
+          
+
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/17-EventCatcher/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/17-EventCatcher"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/17.png" alt="" />
+          <h2>Gerador de senhas</h2>
+          <p>
+            aplicação que gera senhas aléatórias,de acordo com aprefe^rncia do
+            usuário
+          </p>
+          <span class="etc">...</span>
+
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/18-PasswordGeneretor/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/18-PasswordGeneretor"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/18.png" alt="" />
+          <h2>Galeria de imagens aleatórias</h2>
+          <p>
+            exibição deimagens aléatóorias,usando api do unsplash e layout grid
+          </p>
+          <span class="etc">...</span>
+
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/19-RandonImagesGallery/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/19-RandonImagesGallery"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+
+        <div class="card-project">
+          <img class="card-img" src="assets/img/19.png" alt="" />
+          <h2>Emoji Picker</h2>
+          <p>
+            site onde o usáriopode selecionar um ou vários emojis e copiarpara
+            aárea de transferência
+          </p>
+          <span class="etc">...</span>
+
+          <div class="card-Links">
+            <a
+             href="https://daniel-msoares.github.io/Twenty_One_Days/20-EmojiPicker/"
+             target="_blank"
+             ><i class="bi bi-globe2"></i> Visualizar</a
+            >
+            <a
+             href="https://github.com/Daniel-MSoares/Twenty_One_Days/tree/main/20-EmojiPicker"
+             target="_blank"
+             ><i class="bi bi-github"></i></a
+            >
+           </div>
+        </div>
+      </div>
+
+      <div id="showAll" class="show-all-projects" onclick="toggleProjects()">
+        ver mais
+      </div>
+    </section>
+    <section id="contacts">
+      <h2>Contatos:</h2>
+      <span id="email"
+        ><i class="bi bi-envelope"></i> danielmsoares003@gmail.com</span
+      >
+      <span id="whatsapp"><i class="bi bi-whatsapp"></i> (33) 9 8739-5971</span>
+      <div class="btn-contacts">
+        <a
+          href="https://api.whatsapp.com/send?phone=5533987395971&text=ol%C3%A1"
+          target="_blank"
+          ><i class="bi bi-whatsapp"></i
+        ></a>
+        <a href="https://github.com/Daniel-MSoares" target="_blank"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/daniel-muniz-33a889197/"
+          ><i class="bi bi-linkedin" target="_blank"></i
+        ></a>
+        <a href="https://www.instagram.com/d.a.n.i.e.l_muniz/" target="_blank"
+          ><i class="bi bi-instagram" target="_blank"></i
+        ></a>
+      </div>
+    </section>
     <footer>
-        <p>Desenvolvido por Daniel Muniz Soares </p><span>05/09/2022 -josé Gonçalves de minas-MG</span>
+      <p>Desenvolvido por Daniel Muniz Soares</p>
+      <span>05/09/2022 -josé Gonçalves de minas-MG</span>
     </footer>
     <script src="assets/js/app.js"></script>
-</body>
+  </body>
 </html>

@@ -52,7 +52,7 @@ const products=[
     {
         id:8,
         name:"Camizeta Sharingan",
-        img:'Sharingan.jpg',
+        img:'sharingan.jpg',
         description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, nobis magni adipisci fugit sapiente repudiandae possimus, est delectus minima nam quaerat rerum odio dolorem vero ab temporibus ipsum iste qui?',
         price:69.99
     },
